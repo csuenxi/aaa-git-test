@@ -91,6 +91,11 @@ Step 1：clone 项目
 git clone https://gitlab.xxx.com/bob/code-0627.git
 cd code-0627
 
+-- 现有main内容太大，只拉取指定分支下内容
+只拉取v2分支下的代码
+
+git clone -b v2 --single-branch https://github.com/csuenxi/aaa-git-test.git
+
 Step 2：创建你自己的分支（关键）
 不要直接在 main/dev 上改。
 建议这样命名：
@@ -114,12 +119,6 @@ Step 5：push 到远程
 第一次 push：
 
 git push -u origin cathy/code-0627-cathy
-
-2、现有main内容太大，只拉取指定分支下内容
-只拉取v2分支下的代码
-
-git clone -b v2 --single-branch https://github.com/csuenxi/aaa-git-test.git
-
 
 ############################################# 合并分支 
 ！！！以下为将其他分支cathy/0627-git-test合并到main分支示例，实际中替换为自己的不同分支
