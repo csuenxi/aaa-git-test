@@ -54,3 +54,60 @@ origin  https://github.com/csuenxi/git-test.git (push)
 #改后结果：
 #cathy   https://github.com/csuenxi/git-test.git (fetch)
 #cathy   https://github.com/csuenxi/git-test.git (push)
+
+4、本地电脑vpn连github不流畅，改用ssh连
+
+git remote set-url origin git@github.com:csuenxi/aaa-git-test.git
+
+
+
+###################################### v2
+1、在本地git clone远程项目
+git clone https://github.com/csuenxi/aaa-git-test.git
+
+2、切换新分支v2
+git checkout -b v2
+
+3、修改代码后提交，记得查看branch位置
+git branch   # ！检查是否在自己分支上，不要提交到别人分支
+
+git add .   # 或提指定文件  git add xxx 
+git commit -m "xxx"
+git push -u origin v2   # 后续可以直接push 不加后缀
+
+
+###################################### 常见业务场景
+1 拉取 bob/code-0627 项目代码
+2 在本地修改
+3 push 到你自己的分支（cathy/...）
+4 不直接改主干
+5 后续让别人 review（MR）
+
+Step 1：clone 项目
+
+git clone https://gitlab.xxx.com/bob/code-0627.git
+cd code-0627
+
+Step 2：创建你自己的分支（关键）
+不要直接在 main/dev 上改。
+建议这样命名：
+
+git checkout -b cathy/code-0627-cathy
+
+👉 含义：
+cathy：你个人命名空间
+code-0627-cathy：你的实验/任务 
+
+Step 3：开发 + 修改代码
+正常改代码： vim xxx.py  # linux
+# or vscode
+
+Step 4：提交本地 commit
+
+git add .
+git commit -m "cathy: update model baseline"
+
+Step 5：push 到远程
+第一次 push：
+
+git push -u origin cathy/code-0627-cathy
