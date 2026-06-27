@@ -1,0 +1,18 @@
+-- 新建文件夹
+mkdir xxx 
+
+-- 强制删除文件夹xxx ！慎用
+rmdir xxx -Recurse -Force   # powershell
+rm -rf xxx # linux 递归删除文件夹
+rm -r xxx  # linux 普通删除文件夹
+
+-- 新建文件
+touch xxx.txt
+
+-- 复制文件、文件夹、
+cp a.txt b.txt  # 复制文件内容
+cp -r xxx1 xxx2  # xxx1整个文件夹复制到xxx2(---> xxx2下的子文件夹xxx1)
+
+-- 重命名文件/文件夹
+mv a.txt b.txt
+mv xxx1 xxx2
