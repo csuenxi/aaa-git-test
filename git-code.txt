@@ -168,5 +168,5 @@ git reset HEAD~1         # 取消最近一次commit + add
 git reset --hard HEAD~1  # 取消最近一次commit + add + 代码
 
 -- git push 后撤销
-git revert HEAD  #不删除历史, 生成一个“反向 commit”
+git revert HEAD  # 不删除历史, 生成一个“反向commit”, pull/push后、add前修改过的代码会回撤
 :wq  # git自动进入commit message编辑界面，保存退出
