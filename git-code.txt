@@ -146,3 +146,13 @@ git commit -m "merge cathy/0627-git-test into main"
 5️⃣ 推送到远程
 
 git push origin main
+
+
+################################# git 其他
+1、查看历史提交记录
+git log
+git log -n 10  # 最近10条记录
+git log --oneline    # 简洁版
+git log -p 文件路径   # 看每次具体的修改内容
+git blame 文件路径    # 可查谁改了每一行 
+
