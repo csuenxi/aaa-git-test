@@ -155,3 +155,9 @@ git log --oneline    # 简洁版
 git log -p 文件路径   # 看每次具体的修改内容
 git blame 文件路径    # 可查谁改了每一行 
 
+2、各种撤销操作
+-- git add . 后撤销
+
+git reset  # 撤回所有add
+git reset HEAD 文件名  # 只撤回某个add了的文件
+
