@@ -78,7 +78,7 @@ git commit -m "xxx"
 git push -u origin v2   # 后续可以直接push 不加后缀
 
 
-###################################### 
+######################################  cathy/code-0627-cathy 分支
 1、常见业务场景
 1 拉取 bob/code-0627 项目代码
 2 在本地修改
@@ -119,3 +119,29 @@ git push -u origin cathy/code-0627-cathy
 只拉取v2分支下的代码
 
 git clone -b v2 --single-branch https://github.com/csuenxi/aaa-git-test.git
+
+
+############################################# 合并分支 ！！！以下为main示例，实际中替换为自己的不同分支
+本地 git merge（最直接）
+1️⃣ 先切到 main 分支
+
+git checkout main
+
+2️⃣ 更新 main
+
+git pull origin main
+
+3️⃣ 合并你的分支
+
+git merge cathy/0627-git-test
+
+4️⃣ 如果有冲突
+Git 会提示冲突文件，你需要：
+# 修改冲突文件后
+
+git add .
+git commit -m "merge cathy/0627-git-test into main"
+
+5️⃣ 推送到远程
+
+git push origin main
