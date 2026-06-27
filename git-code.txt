@@ -121,7 +121,8 @@ git push -u origin cathy/code-0627-cathy
 git clone -b v2 --single-branch https://github.com/csuenxi/aaa-git-test.git
 
 
-############################################# 合并分支 ！！！以下为main示例，实际中替换为自己的不同分支
+############################################# 合并分支 
+！！！以下为将其他分支cathy/0627-git-test合并到main分支示例，实际中替换为自己的不同分支
 本地 git merge（最直接）
 1️⃣ 先切到 main 分支
 
