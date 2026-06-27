@@ -1,0 +1,9 @@
+git-test 2026.06.27
+
+code README.md
+git init
+git add README.md  or  git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/csuenxi/-.git
+git push -u origin main
