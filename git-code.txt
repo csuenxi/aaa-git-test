@@ -166,3 +166,6 @@ git commit --amend -m "first commit"  #修改最近一次提交commit
 git reset --soft HEAD~1  # 取消最近一次commit + 代码还在（并且还是add状态）
 git reset HEAD~1         # 取消最近一次commit + add
 git reset --hard HEAD~1  # 取消最近一次commit + add + 代码
+
+-- git push 后撤销
+git revert HEAD  #不删除历史, 生成一个“反向 commit”
