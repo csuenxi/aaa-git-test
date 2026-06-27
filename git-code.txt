@@ -8,3 +8,5 @@ git commit -m "first commit"
 git branch -M main  #默认master分支，重命名为main分支
 git remote add origin https://github.com/csuenxi/-.git
 git push -u origin main
+
+git commit --amend -m "first commit"  #修改最近一次提交commit
