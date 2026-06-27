@@ -1,5 +1,6 @@
 git-test 2026.06.27
 
+1、在远程git网页上建一个新仓库+第一次把本地文件夹推到远程仓库
 code README.md
 git init
 git add README.md  or  git add .
