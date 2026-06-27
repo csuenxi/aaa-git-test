@@ -45,12 +45,12 @@ origin  https://github.com/csuenxi/git-test.git (fetch)
 origin  https://github.com/csuenxi/git-test.git (push)
 说明当前远程仓库叫 origin
 
-修改远程仓库名字
-例如把 origin 改成 cathy
+#修改远程仓库名字 ! 没啥必要
+#例如把 origin 改成 cathy
 
-git remote rename origin cathy
-git remote -v 
+#git remote rename origin cathy
+#git remote -v 
 
-改后结果：
-cathy   https://github.com/csuenxi/git-test.git (fetch)
-cathy   https://github.com/csuenxi/git-test.git (push)
+#改后结果：
+#cathy   https://github.com/csuenxi/git-test.git (fetch)
+#cathy   https://github.com/csuenxi/git-test.git (push)
