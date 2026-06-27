@@ -9,8 +9,6 @@ git branch -M main  #默认master分支，重命名为main分支
 git remote add origin https://github.com/csuenxi/-.git
 git push -u origin main
 
-git commit --amend -m "first commit"  #修改最近一次提交commit
-
 --你创建 GitHub 仓库的时候勾选了：
 ✅ Add a README
 ✅ Add .gitignore
@@ -159,5 +157,12 @@ git blame 文件路径    # 可查谁改了每一行
 -- git add . 后撤销
 
 git reset  # 撤回所有add
-git reset HEAD 文件名  # 只撤回某个add了的文件
+git reset HEAD 文件名   # 只撤回某个add了的文件
+git reset --hard HEAD   # 改了一堆后git add . ，但想回撤到修改前
 
+-- git commit -m "xxx" 后撤销
+
+git commit --amend -m "first commit"  #修改最近一次提交commit
+git reset --soft HEAD~1  # 取消最近一次commit + 代码还在（并且还是add状态）
+git reset HEAD~1         # 取消最近一次commit + add
+git reset --hard HEAD~1  # 取消最近一次commit + add + 代码
